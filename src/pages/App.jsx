@@ -64,7 +64,7 @@ function App() {
     <div className="app">
       <h1 className='title'>Quiz</h1>
       {
-        play ? <button className='play remove' onClick={handlePlay}>Играть</button> : (
+        play ? <button className='play remove' onClick={handlePlay}>Начать</button> : (
           <div className="quiz">
             {
               score === questions.length ? (
