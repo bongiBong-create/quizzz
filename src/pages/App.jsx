@@ -1,7 +1,6 @@
 import '../app/styles/app.css';
 import { useState } from 'react';
 import { motion } from "framer-motion"
-import { div } from 'framer-motion/client';
 
 function App() {
   const [score, setScore] = useState(1)
