@@ -1,0 +1,166 @@
+.app {
+  max-width: 710px;
+  margin: 0 auto;
+  padding: 200px 20px;
+  position: relative;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.show-score {
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 100px;
+}
+
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.answers {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.question span {
+  color: #ffd41f;
+}
+
+.answer-btn {
+  font-size: 20px;
+  text-align: left;
+  padding: 10px 20px;
+  width: 100%;
+  border: 2px solid #ffd41f;
+  border-radius: 8px;
+  background-color: #d9d8e0;
+}
+
+.answer-btn:hover {
+  border: 2px solid #ffd41f;
+  background-color: rgb(217, 216, 224, 0.7);
+}
+
+.remove {
+  font-size: 2rem;
+  border: 2px solid #ffd41f;
+  background-color: #d9d8e0;
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+
+.remove:hover {
+  font-size: 2.5rem;
+  background-color: rgb(217, 216, 224, 0.7);
+}
+
+.play {
+  margin: 100px auto 0 auto;
+}
+
+.el {
+  position: absolute;
+  background-image: url("../../../public/vite.svg");
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+}
+
+.el:nth-child(1) {
+  left: 70%;
+  top: 0;
+  -webkit-animation: love 20s ease-in infinite;
+  animation: love 20s ease-in infinite;
+}
+
+.el:nth-child(2) {
+  left: 93%;
+  top: 0;
+  -webkit-animation: love 10s ease-in infinite;
+  animation: love 10s ease-in infinite;
+}
+
+.el:nth-child(3) {
+  left: 42%;
+  top: 0;
+  -webkit-animation: love 15s ease-in infinite;
+  animation: love 15s ease-in infinite;
+}
+
+.el:nth-child(4) {
+  left: 6%;
+  top: 0;
+  -webkit-animation: love 20s ease-in infinite;
+  animation: love 20s ease-in infinite;
+}
+
+.el:nth-child(5) {
+  left: 20%;
+  top: 0;
+  -webkit-animation: love 25s ease-in infinite;
+  animation: love 25s ease-in infinite;
+}
+
+
+/* ===================================================ANIMATION */
+@keyframes bonk {
+  from {
+    width: 420px;
+    height: 690px;
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  to {
+    width: 420px;
+    height: 690px;
+  }
+}
+
+@-webkit-keyframes love {
+  0% {
+    transform: translateY(0%);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+@keyframes love {
+  0% {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(100Vh);
+    opacity: 1;
+  }
+}
