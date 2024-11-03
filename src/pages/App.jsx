@@ -62,15 +62,6 @@ function App() {
 
   return (
     <div className="app">
-      {
-        score === questions.length ? <div className='el__container'>
-          <div className="el"></div>
-          <div className="el"></div>
-          <div className="el"></div>
-          <div className="el"></div>
-          <div className="el"></div>
-        </div> : ""
-    }
       <h1 className='title'>Quiz</h1>
       {
         play ? <button className='play remove' onClick={handlePlay}>Играть</button> : (
